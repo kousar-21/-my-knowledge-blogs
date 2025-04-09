@@ -47,7 +47,7 @@ function App() {
           <h1>Reading Time: {readingCount}</h1>
           <h1>Bookmark: {bookMarked.length}</h1>
           {
-            bookMarked.map(marked => <p className='bg-red-600 p-2 shadow m-2 text-white'>{marked.title}</p>)
+            bookMarked.map(marked => <p key={marked} className='bg-red-600 p-2 shadow m-2 text-white'>{marked.title}</p>)
           }
         </div>
       </div>
